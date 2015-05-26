@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>prototype</title>
-<link rel="stylesheet" href="../thompson-web-twinfinch/2567-twin-finch/production/css/normalize.css" />
+<link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/main.css" />
 <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:700' rel='stylesheet' type='text/css'>
@@ -12,82 +12,123 @@
 <body>
 
 	<div class="wrapper">
-    	<header id="header">
-        	<img class="logo" src="img/tf-icon.png" alt="Twin Finch's logo" />
-            <img class="img-button" src="img/fb-icon2.png" alt="A button that links to Twin Finch's facebook page" />
-            <img class="img-button" src="img/tw-icon.png" alt="A button that links to Twin Finch's twitter page" />
-            <img class="img-button" src="img/tu-icon.png" alt="A button that links to Twin Finch's tumblr page" />
-            <img class="img-button" src="img/g-icon2.png" alt="A button that links to Twin Finch's google plus page" />
+    <div id="header">
+    	<header>
+        	<ul>
+        		<li><img class="logo" src="img/tf-icon.png" alt="Twin Finch's logo" /></li>
+            	<li><img class="img-button" src="img/fb-icon2.png" alt="A button that links to Twin Finch's facebook page" /></li>
+            	<li><img class="img-button" src="img/tw-icon.png" alt="A button that links to Twin Finch's twitter page" /></li>
+            	<li><img class="img-button" src="img/tu-icon.png" alt="A button that links to Twin Finch's tumblr page" /></li>
+            	<li><img class="img-button" src="img/g-icon2.png" alt="A button that links to Twin Finch's google plus page" /></li>
+            </ul>
+            <div id="btn-one">
+                	<nav>
+                        <ol>
+                            <li><b><a href="#about">About</a></b></li>
+                            <li><b><a href="#roasts">Roasts</a></b></li>
+                            <li><b><a href="#reviews">Reviews</a></b></li>
+                            <li><b><a href="#contacts">Contact Us</a></b></li>
+                        </ol>
+                    </nav>
+                </div>
         </header>
+    </div>
+    	<section>
         <div>
-        	<img class="hero" src="img/woodfloor.jpg" alt="A wooden texture representing Twin Finch Roastery" />
+        	<img class="top-hero" src="img/woodfloor.jpg" alt="A wooden texture representing Twin Finch Roastery" />
+                <p id="top-h">Twin Finch is an authentic micro-roastery; small, dedicated, &amp; highly focused on quality. We have a constantly evolving, hand picked selection of fine coffee origins &amp; delicious blends engineered to help you brew a cafe-quality cup at home.</p>
         </div>
-        <div class="row-1">
+        <div class="row">
         	<header>
-            	<h1>What is Twin Finch?</h1>
+            	<h1 id="about">What is Twin Finch?</h1>
             </header>
         	<div class="col-1-1">
-            	<p id="lead-in">Twin Finch is an authentic micro-roastery; small, dedicated, and highly focused on quality. We have a constantly evolving, hand picked selection of fine coffee origins and delicious blends engineered to help you brew a cafe-quality cup at home.</p>
-                <p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can’t be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans and produces a much more even roasting environment.</p>
-            </div>
-            <div class="col-1-1">
-            	<p>Online orders usually ship quickly and arrive within three business days. We only ship the freshest coffee and your satifaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis and your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
-                <p>You can buy from us directly at our Seattle storefront located at 457 NW Market Street.</p>
+                <p>Our coffee is roasted in a hot air, refractory lined roaster with an extraordinary level of control. The significance of relying on a high volume of hot air to roast coffee beans can’t be understated. Most small coffee roasters use a single stage burner which offers virtually no control during the roasting process. The refractory significantly reduces hot spots which can damage coffee beans &amp; produces a much more even roasting environment.</p>
             </div>
         </div>
-        <div id="table">
+        </section>
+        <section>
+        <div id="roasts">
         <table>
         	<caption>Roast Flavors</caption>
+            	<thead>
+                	<tr>
+                    	<th class="hvt">Evening Oak</th>
+                        <th class="hvt">House Blend</th>
+                    	<th>Sunrise</th>
+                        <th>Midnight</th>
+                        <th>Espresso</th>
+                        
+                    </tr>
+                </thead>
             	<tbody>
                 	<tr>
-                    	<td>Sunrise</td>
-                    	<td>Light, fruity acidity which complements its fully nutty body &amp; unique spicy tones.</td>
-                        <td>Light</td>
-                        <td>La Chiapas, Mexico</td>
-                        <td>1lb $17.95</td>
-                    </tr>
-                    <tr>
-                    	<td>House Blend</td>
-                        <td>Hint of cirtus, complemented by flavors of dark chocolate, peanut &amp; light pepper notes.</td>
-                        <td>Medium</td>
-                        <td>Cajamarca &amp; Moyobamba Regions, Peru</td>
-                        <td>1lb $17.95</td>
-                    </tr>
-                    <tr>
-                    	<td>Evening Oak</td>
-                        <td>Our featured roast of the season. Pungentyly rich &amp; complex with hints of night-blooming flowers and coriander in aroma and cup.</td>
-                        <td>Medium-Dark</td>
-                        <td>Eastern Java, Indonesia</td>
-                        <td>1lb $19.95</td>
-                    </tr>
-                    <tr>
-                    	<td>Midnight</td>
-                        <td>Roasted into second crack for a big, bold and dark cup. Beans display oil.</td>
-                        <td>Dark</td>
-                        <td>Latin America</td>
-                        <td>1lb $17.95</td>
-                    </tr>
-                    <tr>
-                    	<td>Espresso</td>
+                    	<td class="hvt">Our featured roast of the season. Pungentyly rich &amp; complex with hints of night-blooming flowers &amp; coriander in aroma &amp; cup.</td>
+                        <td class="hvt">Hint of cirtus, complemented by flavors of dark chocolate, peanut &amp; light pepper notes.</td>
+                        <td>Light, fruity acidity which complements its fully nutty body &amp; unique spicy tones.</td>
+                        <td>Roasted into second crack for a big, bold &amp; dark cup. Beans display oil.</td>
                         <td>Clean, a little roasty, sumptuous crema, unfussy, delicious.</td>
+                        
+                    </tr>
+                    <tr>
+                    	<td class="hvt">Medium</td>
+                        <td class="hvt">Medium-Dark</td>
+                        <td>Light</td>
+                        <td>Dark</td>
                         <td>N/A</td>
+                        
+                    </tr>
+                    <tr>
+                    	<td class="hvt">Cajamarca &amp; Moyobamba Regions, Peru</td>
+                        <td class="hvt">Eastern Java, Indonesia</td>
+                        <td>La Chiapas, Mexico</td>
+                        <td>Latin America</td>
                         <td>Latin America, Africa, Indonesia</td>
+                        
+                    </tr>
+                    <tr>
+                    	<td class="hvt">1lb $17.95</td>
+                        <td class="hvt">1lb $19.95</td>
+                        <td>1lb $17.95</td>
+                        <td>1lb $17.95</td>
                         <td>1lb $19.95</td>
+                        
                     </tr>
                 </tbody>
-                <tfoot>
-                </tfoot>
         </table>
+        <div class="place-order">
+        	<p class="order-btn"><a href="#roasts">Place Order</a></p>
         </div>
-        <div class="row-2">
-        	<p>This would be a short sentence about the “How to Brew” link. A link to “How to Brew”</p>
+        <div class="place-order">
+        	<p class="order-btn"><a href="#roasts">Place Order</a></p>
         </div>
-        <div class="row-3">
+        <div class="place-order">
+        	<p class="order-btn"><a href="#roasts">Place Order</a></p>
+        </div>
+        <div class="place-order">
+        	<p class="order-btn"><a href="#roasts">Place Order</a></p>
+        </div>
+        <div class="place-order">
+        	<p class="order-btn"><a href="#roasts">Place Order</a></p>
+        </div>
+        </div>
+        </section>
+        <section>
+        <div class="row">
+        	<div class="col-1-1">
+        		<p>Online orders usually ship quickly &amp; arrive within three business days. We only ship the freshest coffee &amp; your satifaction is guaranteed. Our rotating, featured coffees are roasted on a more limited basis &amp; your order may be held until the next time a batch hits the roaster. We only ship whole bean, but will grind for you in-store per request.</p>
+                <p>This would be a short sentence about the “How to Brew” link. A link to “How to Brew”</p>
+                
+            </div>
+        </div>
+        </section>
+        <section>
+        <div class="row">
         	<div class="col-1-2">
             	<header>
-                	<h2>Latest Reviews</h2>
+                	<h2 id="reviews">Latest Reviews</h2>
                 </header>
-                <blockquote>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” - Coffee Review</blockquote>
+                <blockquote>“This extraordinary coffee almost defies description with its aromatic complexity while retaining a classic clarity of structure.” - <cite>Coffee Review</cite></blockquote>
                 <p>Our House Blend was rated a 98 out of 100 by coffeereview.com!</p>
             </div>
             <div class="col-1-2">
@@ -104,26 +145,40 @@
 “Love your roast! Can’t get enough!”</p>
             </div>
         </div>
+        </section>
+        <section>
+        <div class="row">
+        	<div class="col-1-1">
+                <header>
+                    <h2 id="contacts">Contact Us!</h2>
+                </header>
+                <p>You can buy from us directly at our Seattle storefront located at 457 NW Market Street.</p>
+                <p>We would like to hear from you! please give us your feedback on what you think of our roast.</p>
+                <form>
+                	<label for="name">Name</label>
+                    	<input type="text" id="name">
+                	<label for="address">Address</label>
+                    	<input type="text" id="address">
+                    <label for="emailAddress">Email Address</label>
+                    	<input type="text" id="emailAddress">
+                    <textarea rows="10" placeholder="Enter your message here..."></textarea>
+                    <button type="submit">Submit Form</button>
+                </form>
+            </div>
+        </div>
+        </section>
+        <footer>
+        	<ul>
+               	<li><img class="logo" src="img/tf-icon.png" alt="Twin Finch's logo" /></li>
+               	<li><img class="img-button" src="img/fb-icon2.png" alt="A button that links to Twin Finch's facebook page" /></li>
+               	<li><img class="img-button" src="img/tw-icon.png" alt="A button that links to Twin Finch's twitter page" /></li>
+                <li><img class="img-button" src="img/tu-icon.png" alt="A button that links to Twin Finch's tumblr page" /></li>
+                <li><img class="img-button" src="img/g-icon2.png" alt="A button that links to Twin Finch's google plus page" /></li>
+            </ul>
+        </footer>
         <div >
         	<img class="hero" src="img/tf-map.png" alt="A physical location of Twin Finch Roastery" />
         </div>
-        <div class="row-4">
-        	<header>
-            	<h2>Contact Us!</h2>
-            </header>
-            <p>We would like to hear from you! please give us your feedback on what you think of our roast.</p>
-            <form>
-            	<textarea rows="10" placeholder="Enter your message here..."></textarea>
-                <button type="submit">Submit Form</button>
-            </form>
-        </div>
-        <footer>
-        	<img class="logo" src="img/tf-icon.png" alt="Twin Finch's logo" />
-            <img class="img-button" src="img/fb-icon2.png" alt="A button that links to Twin Finch's facebook page" />
-            <img class="img-button" src="img/tw-icon.png" alt="A button that links to Twin Finch's twitter page" />
-            <img class="img-button" src="img/tu-icon.png" alt="A button that links to Twin Finch's tumblr page" />
-            <img class="img-button" src="img/g-icon2.png" alt="A button that links to Twin Finch's google plus page" />
-        </footer>
     </div>
 
 </body>

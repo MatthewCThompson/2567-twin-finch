@@ -1,71 +1,26 @@
 @charset "UTF-8";
 /* CSS Document */
 
-* {
-	background: #27150F;
-}
 #wrapper {
 	width: 100%;
 	margin: 0 auto;
 }
-caption {
-	font-weight:bold;
-	font-size: 56px;
-	margin-bottom: 20px;
-	font-family: 'Gentium Book Basic', serif;
-}
-p {
-	font-family: 'Arimo', sans-serif;
-	margin-bottom: 18px;
-	line-height: 18px;
-	color: #F1E8DC;
-}
-table {
-	color: #F1E8DC;
-}
-td {
-	font-family: 'Arimo', sans-serif;
-}
-header {
-	text-align: center;
-	font-size:36px;
-	font-family: 'Gentium Book Basic', serif;
-	color: #F1E8DC;
-}
-#header {
-	background: #F1E8DC;
-}
-#lead-in {
-	font-size:20px;
-	line-height: 24px;
-	margin-bottom: 18px;
-}
-footer {
-	text-align:center;
-	margin-top: 20px;
-	background: #F1E8DC;
-}
-td {
-	padding-bottom: 20px;
-	border-bottom: solid 1px #F1E8DC;
-}
-table {
+.top-hero {
 	width: 100%;
+	margin-top: 20px;
+	position: relative;
+	opacity: 0.6;
 }
-textarea {
-	margin: 20px;
+#top-h {
+	position: absolute;
+	top: 260px;
+	left: 400px;
+	width: 700px;
+	height: 100px;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 56px;
 }
-button {
-	display: block;
-	margin: 0 auto;
-}
-form {
-	color: #F1E8DC;
-}
-div {
-	padding-bottom: 20px;
-}
-
 .hero {
 	width: 100%;
 	margin-top: 20px;
@@ -75,25 +30,120 @@ div {
 	margin-right: 60px;
 }
 .img-button {
-	width: 100px;
-	height: auto;
+	width: 80px;
 	margin: 20px;
 }
-.row-4 {
+header {
+	text-align: center;
+	font-size:36px;
+	font-family: 'Gentium Book Basic', serif;
+}
+#header {
+	background: #F1E8DC;
+	width: 100%;
+}
+footer {
 	text-align:center;
-	margin: 20px;
+	margin-top: 20px;
+	background: #F1E8DC;
 }
 .row {
 	width: 100%;
-	padding-bottom: 20%;
+	padding-bottom: 10%;
+	overflow: auto;
 }
-.row-2 {
+p {
+	font-family: 'Arimo', sans-serif;
+	margin-bottom: 18px;
+	line-height: 18px;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li {
+	display: inline-block;
+}
+caption {
+	font-weight:bold;
+	font-size: 56px;
+	margin-bottom: 20px;
+	font-family: 'Gentium Book Basic', serif;
+}
+roasts {
+	width: 100%;
+	color: black;
+	font-family: 'Arimo', sans-serif;
+}
+th {
+	border-bottom: 1px solid black;
+	border-collapse: collapse;
+}
+td {
+	padding: 10px;
+}
+.hvt {
+	font-size: 18px;
+}
+.place-order {
+	overflow: auto;
+	width: 150px;
+	height: 50px;
+	float: left;
+	background: #8D2E41;
+	margin: 10px 0 20px 130px;
+}
+.order-btn {
+	font-family: 'Arimo', sans-serif;
+	font-size: 18px;
+	font-weight:bold;
 	text-align: center;
-	margin: 20px 0;
+	color: #F1E8DC;
+}
+.place-order:hover {
+	overflow: auto;
+	width: 150px;
+	height: 50px;
+	float: left;
+	background: #DA4765;
+	margin: 10px 0 20px 130px;
+	
+}
+ol li {
+	list-style: none;
+	margin: 0 4px;
+	display: inline;
+	font-weight: bolder;
+	font-family: 'Arimo', sans-serif;
+}
+#btn-one {
+	height: 25.65px;
+	font-size: 14px;
+	float: left;
+	margin: 22px 0 0 585px;
+}
+a:active {
+	text-decoration: none;
+	color: white;
+}
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+a:link {
+	text-decoration: none;
+	color: #F1E8DC;
+}
+textarea, button, label, input {
+	display: block;
+	margin: 10px auto;
+}
+form {
+	text-align: center;
 }
 .col-1-1 {
-	float: left;
-	width: 50%;
+	text-align: center;
 }
 .col-1-2 {
 	float: left;

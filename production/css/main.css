@@ -1,152 +1,192 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#wrapper {
+/* --TABLE OF CONTENTS--\
+1.0 HEADER
+1.1 CONTENT-ONE
+2.0 CONTENT-TWO
+2.1 TABLES
+3.0 CONTENT-THREE
+3.1 REVIEWS
+3.2 UPDATES
+4.0 CONTENT-FOUR
+4.1 FORMS
+4.2 FOOTER
+#50a788 GREEN
+#f1e8dc TAN
+#da4765 PINK
+#8d2e41 RED
+\ -------------------- */
+/* ========================================================== \
+												1.0 HEADER-ONE
+\ ========================================================== */
+#wrapper-1-1 {
 	width: 100%;
-	margin: 0 auto;
 }
-.top-hero {
+#top-nav-bar {
+	background: #F1E8DC;
 	width: 100%;
-	margin-top: 20px;
+	overflow: auto;
 	position: relative;
-	opacity: 0.6;
 }
-#top-h {
-	position: absolute;
-	top: 260px;
-	left: 400px;
-	width: 700px;
-	height: 100px;
-	font-weight: bold;
-	font-size: 50px;
-	line-height: 56px;
-}
-.hero {
-	width: 100%;
-	margin-top: 20px;
-}
-.logo {
-	width: 200px;
-	margin-right: 60px;
-}
-.img-button {
-	width: 80px;
-	margin: 20px;
-}
-header {
-	text-align: center;
-	font-size:36px;
-	font-family: 'Gentium Book Basic', serif;
-}
-#header {
-	background: #F1E8DC;
-	width: 100%;
-}
-footer {
-	text-align:center;
-	margin-top: 20px;
-	background: #F1E8DC;
-}
-.row {
-	width: 100%;
-	padding-bottom: 10%;
-	overflow: auto;
-}
-p {
-	font-family: 'Arimo', sans-serif;
-	margin-bottom: 18px;
-	line-height: 18px;
-}
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-li {
+ol, li {
 	display: inline-block;
-}
-caption {
-	font-weight:bold;
-	font-size: 56px;
-	margin-bottom: 20px;
-	font-family: 'Gentium Book Basic', serif;
-}
-roasts {
-	width: 100%;
-	color: black;
-	font-family: 'Arimo', sans-serif;
-}
-th {
-	border-bottom: 1px solid black;
-	border-collapse: collapse;
-}
-td {
-	padding: 10px;
-}
-.hvt {
-	font-size: 18px;
-}
-.place-order {
-	overflow: auto;
-	width: 150px;
-	height: 50px;
-	float: left;
-	background: #8D2E41;
-	margin: 10px 0 20px 130px;
-}
-.order-btn {
-	font-family: 'Arimo', sans-serif;
-	font-size: 18px;
-	font-weight:bold;
 	text-align: center;
-	color: #F1E8DC;
+	list-style-type: none;
+	color: #2C5B4A;
 }
-.place-order:hover {
-	overflow: auto;
-	width: 150px;
-	height: 50px;
-	float: left;
-	background: #DA4765;
-	margin: 10px 0 20px 130px;
-	
-}
-ol li {
-	list-style: none;
-	margin: 0 4px;
-	display: inline;
-	font-weight: bolder;
-	font-family: 'Arimo', sans-serif;
-}
-#btn-one {
-	height: 25.65px;
-	font-size: 14px;
-	float: left;
-	margin: 22px 0 0 585px;
-}
-a:active {
-	text-decoration: none;
-	color: white;
-}
-a:visited {
-	text-decoration: none;
-	color: black;
-}
-a:link {
-	text-decoration: none;
-	color: #F1E8DC;
-}
-textarea, button, label, input {
-	display: block;
-	margin: 10px auto;
-}
-form {
-	text-align: center;
-}
-.col-1-1 {
-	text-align: center;
+.nav-li {
+	position: absolute;
+	top: 100px;
+	left: 430px;
+	font-size: 2rem;
 }
 .col-1-2 {
 	float: left;
-	width: 50%;
+	display: inline-block;
+	width: 45%;
+}
+.on-img {
+	position: absolute;
+	top: 350px;
+	left: 470px;
+	width: 500px;
+	margin: 0 auto;
+	font-size: 2.5rem;
 	text-align: center;
+	color: #8D2E41;
+}
+.imgs {
+	width: 100%;
+	position: relative;
+	opacity: 0.5;
+}
+/* ========================================================== \
+												1.1 CONTENT-ONE
+\ ========================================================== */
+#wrapper-1-2 {
+	width: 75.2%;
+	margin: 0 auto;
+}
+.row {
+	width: 71%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.col-1-1 {
+	width: 100%;
+}
+.row:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+[class*='col-'] {
+	float: left;
+	padding: 0 20px 20px 0;
+}
+[class*='col-']:last-of-type {
+	padding-right: 0;
+}
+body {
+	font-family: 'Arimo', sans-serif;
+	font-size: 16pt;
+	
+}
+h2, h3, h4 {
+	font-family: 'Gentium Book Basic', serif;
+	font-weight: bold;
+	color: #8D2E41;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 40px;
+}
+h4 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 4rem;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+a:link {
+	text-decoration: none;
+	color: inherit;
+}
+/* ========================================================== \
+												2.0 CONTENT-TWO
+\ ========================================================== */
+/* ========================================================== \
+												2.1 TABLES
+\ ========================================================== */
+th {
+	padding: 10px 10px 0 10px;
+	color: #8D2E41;
+}
+td {
+	padding: 0;
+}
+.order {
+	background: #8D2E41;
+	color: #f1e8dc;
+}
+.order:hover {
+	background: #da4765;
+	color: #000;
+}
+.top-roast {
+	font-size: 1.5rem;
+}
+/* ========================================================== \
+												3.0 CONTENT-THREE
+\ ========================================================== */
+/* ========================================================== \
+												3.1 REVIEWS
+\ ========================================================== */
+/* ========================================================== \
+												3.2 UPDATES
+\ ========================================================== */
+/* ========================================================== \
+												4.0 CONTENT-FOUR
+\ ========================================================== */
+textarea, label, input {
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+}
+button {
+	margin: 20px auto;
+	display: inherit;
+	background: #8D2E41;
+	color: #f1e8dc;
+}
+button:hover {
+	background: #da4765;
+	color: #000;
+}
+/* ========================================================== \
+												4.1 FORMS
+\ ========================================================== */
+/* ========================================================== \
+												4.2 FOOTER
+\ ========================================================== */
+#bot-nav-bar {
+	background: #F1E8DC;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+}
+.nav-soc {
+	position: absolute;
+	bottom: 0;
+	left: 500px;
 }

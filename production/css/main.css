@@ -37,7 +37,7 @@ ol, li {
 }
 .nav-li {
 	position: absolute;
-	top: 100px;
+	top: 75px;
 	left: 430px;
 	font-size: 2rem;
 }
@@ -48,7 +48,7 @@ ol, li {
 }
 .on-img {
 	position: absolute;
-	top: 350px;
+	top: 360px;
 	left: 470px;
 	width: 500px;
 	margin: 0 auto;
@@ -83,7 +83,7 @@ ol, li {
 }
 [class*='col-'] {
 	float: left;
-	padding: 0 20px 20px 0;
+	padding: 0 10px 10px 0;
 }
 [class*='col-']:last-of-type {
 	padding-right: 0;
@@ -91,7 +91,7 @@ ol, li {
 body {
 	font-family: 'Arimo', sans-serif;
 	font-size: 16pt;
-	
+	color: #27150f;
 }
 h2, h3, h4 {
 	font-family: 'Gentium Book Basic', serif;
@@ -99,16 +99,17 @@ h2, h3, h4 {
 	color: #8D2E41;
 	margin: 0 auto;
 	text-align: center;
-	padding-top: 40px;
 }
 h4 {
 	font-size: 2rem;
 }
 h3 {
 	font-size: 3rem;
+	padding-top: 40px;
 }
 h2 {
 	font-size: 4rem;
+	padding-top: 40px;
 }
 a:active {
 	text-decoration: none;
@@ -122,6 +123,8 @@ a:link {
 	text-decoration: none;
 	color: inherit;
 }
+@media screen and (max-width: 768px) {
+}
 /* ========================================================== \
 												2.0 CONTENT-TWO
 \ ========================================================== */
@@ -132,10 +135,10 @@ th {
 	padding: 10px 10px 0 10px;
 	color: #8D2E41;
 }
-td {
-	padding: 0;
+table {
+	padding: 20px 0; 
 }
-.order {
+#order a {
 	background: #8D2E41;
 	color: #f1e8dc;
 }
@@ -149,6 +152,9 @@ td {
 /* ========================================================== \
 												3.0 CONTENT-THREE
 \ ========================================================== */
+#reviews {
+	margin-top: 20px;
+}
 /* ========================================================== \
 												3.1 REVIEWS
 \ ========================================================== */
@@ -158,6 +164,9 @@ td {
 /* ========================================================== \
 												4.0 CONTENT-FOUR
 \ ========================================================== */
+#contact {
+	margin-top: 20px;
+}
 textarea, label, input {
 	display: block;
 	margin: 15px auto;

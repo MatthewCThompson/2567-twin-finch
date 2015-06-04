@@ -4,24 +4,25 @@
 /* --TABLE OF CONTENTS--\
 1.0 HEADER
 1.1 CONTENT-ONE
-2.0 CONTENT-TWO
 2.1 TABLES
 3.0 CONTENT-THREE
-3.1 REVIEWS
-3.2 UPDATES
-4.0 CONTENT-FOUR
 4.1 FORMS
 4.2 FOOTER
-#50a788 GREEN
-#f1e8dc TAN
-#da4765 PINK
-#8d2e41 RED
 \ -------------------- */
 /* ========================================================== \
 												1.0 HEADER-ONE
 \ ========================================================== */
-#wrapper-1-1 {
+.wrapper {
 	width: 100%;
+}
+section {
+	margin: 150px 0;
+}
+body {
+	font-family: 'Arimo', sans-serif;
+	font-size: 16pt;
+	color: #27150f;
+	line-height: 24pt;
 }
 #top-nav-bar {
 	background: #F1E8DC;
@@ -34,52 +35,64 @@ ol, li {
 	text-align: center;
 	list-style-type: none;
 	color: #2C5B4A;
+	margin: 0 10px;
 }
 .nav-li {
 	position: absolute;
-	top: 75px;
-	left: 430px;
+	top: 110px;
+	left: 390px;
 	font-size: 2rem;
-}
-.col-1-2 {
-	float: left;
-	display: inline-block;
-	width: 45%;
 }
 .on-img {
 	position: absolute;
-	top: 360px;
+	top: 330px;
 	left: 470px;
 	width: 500px;
 	margin: 0 auto;
 	font-size: 2.5rem;
 	text-align: center;
 	color: #8D2E41;
+	line-height: 40pt;
 }
 .imgs {
 	width: 100%;
 	position: relative;
 	opacity: 0.5;
 }
+#bg-hero {
+	background: url(../img/woodfloor.jpg) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	color: #8D2E41;
+	text-align: center;
+	font-size: 2rem;
+}
+.center-block {
+	float: none !important;
+	margin-right: auto;
+	margin-left: auto;
+}
 /* ========================================================== \
 												1.1 CONTENT-ONE
 \ ========================================================== */
-#wrapper-1-2 {
-	width: 75.2%;
-	margin: 0 auto;
-}
+
 .row {
 	width: 71%;
 	margin: 0 auto;
 	padding-bottom: 20px;
 }
-.col-1-1 {
-	width: 100%;
-}
 .row:after {
 	content: " ";
 	display: table;
 	clear: both;
+}
+.col-1-1 {
+	width: 100%;
+}
+.col-1-2 {
+	float: left;
+	display: inline-block;
+	width: 45%;
 }
 [class*='col-'] {
 	float: left;
@@ -88,28 +101,17 @@ ol, li {
 [class*='col-']:last-of-type {
 	padding-right: 0;
 }
-body {
-	font-family: 'Arimo', sans-serif;
-	font-size: 16pt;
-	color: #27150f;
-}
 h2, h3, h4 {
 	font-family: 'Gentium Book Basic', serif;
 	font-weight: bold;
 	color: #8D2E41;
-	margin: 0 auto;
 	text-align: center;
-}
-h4 {
-	font-size: 2rem;
 }
 h3 {
 	font-size: 3rem;
-	padding-top: 40px;
 }
 h2 {
 	font-size: 4rem;
-	padding-top: 40px;
 }
 a:active {
 	text-decoration: none;
@@ -124,49 +126,47 @@ a:link {
 	color: inherit;
 }
 @media screen and (max-width: 768px) {
+	.wrapper {
+		width: 95%;
+	}
+	.col-1-1 {
+		width: 50%;
+	}
+	.col-1-2 {
+		width: 25%;
+	}
 }
-/* ========================================================== \
-												2.0 CONTENT-TWO
-\ ========================================================== */
 /* ========================================================== \
 												2.1 TABLES
 \ ========================================================== */
 th {
-	padding: 10px 10px 0 10px;
 	color: #8D2E41;
+	font-size: 1.5rem;
 }
-table {
-	padding: 20px 0; 
+td {
+	padding: 5px;
+	font-size: 1rem;
 }
 #order a {
 	background: #8D2E41;
+	padding: 10px;
 	color: #f1e8dc;
+	font-size: 1rem;
 }
-.order:hover {
+#order a:hover {
 	background: #da4765;
 	color: #000;
-}
-.top-roast {
-	font-size: 1.5rem;
 }
 /* ========================================================== \
 												3.0 CONTENT-THREE
 \ ========================================================== */
-#reviews {
-	margin-top: 20px;
+h4 {
+	font-size: 2rem;
+	margin: 10px 0;
 }
 /* ========================================================== \
-												3.1 REVIEWS
+												4.1 FORMS
 \ ========================================================== */
-/* ========================================================== \
-												3.2 UPDATES
-\ ========================================================== */
-/* ========================================================== \
-												4.0 CONTENT-FOUR
-\ ========================================================== */
-#contact {
-	margin-top: 20px;
-}
 textarea, label, input {
 	display: block;
 	margin: 15px auto;
@@ -183,9 +183,6 @@ button:hover {
 	color: #000;
 }
 /* ========================================================== \
-												4.1 FORMS
-\ ========================================================== */
-/* ========================================================== \
 												4.2 FOOTER
 \ ========================================================== */
 #bot-nav-bar {
@@ -197,5 +194,5 @@ button:hover {
 .nav-soc {
 	position: absolute;
 	bottom: 0;
-	left: 500px;
+	left: 440px;
 }

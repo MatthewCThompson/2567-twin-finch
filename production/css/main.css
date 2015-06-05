@@ -16,7 +16,7 @@
 	width: 100%;
 }
 section {
-	margin: 150px 0;
+	margin: 125px 0;
 }
 body {
 	font-family: 'Arimo', sans-serif;
@@ -28,31 +28,18 @@ body {
 	background: #F1E8DC;
 	width: 100%;
 	overflow: auto;
-	position: relative;
 }
 ol, li {
 	display: inline-block;
 	text-align: center;
 	list-style-type: none;
 	color: #2C5B4A;
-	margin: 0 10px;
 }
 .nav-li {
 	position: absolute;
 	top: 110px;
 	left: 390px;
 	font-size: 2rem;
-}
-.on-img {
-	position: absolute;
-	top: 330px;
-	left: 470px;
-	width: 500px;
-	margin: 0 auto;
-	font-size: 2.5rem;
-	text-align: center;
-	color: #8D2E41;
-	line-height: 40pt;
 }
 .imgs {
 	width: 100%;
@@ -62,7 +49,6 @@ ol, li {
 #bg-hero {
 	background: url(../img/woodfloor.jpg) no-repeat center;
 	background-size: cover;
-	width: 100%;
 	color: #8D2E41;
 	text-align: center;
 	font-size: 2rem;
@@ -75,11 +61,10 @@ ol, li {
 /* ========================================================== \
 												1.1 CONTENT-ONE
 \ ========================================================== */
-
 .row {
 	width: 71%;
 	margin: 0 auto;
-	padding-bottom: 20px;
+	overflow: auto;
 }
 .row:after {
 	content: " ";
@@ -125,15 +110,44 @@ a:link {
 	text-decoration: none;
 	color: inherit;
 }
-@media screen and (max-width: 768px) {
-	.wrapper {
-		width: 95%;
+@media screen and (max-width: 768px), (min-device-width: 768px) and (max-device-width: 1024px) {
+	body {
+		line-height: 36px;
+	}
+	h2 {
+		line-height: 96px;
 	}
 	.col-1-1 {
-		width: 50%;
+		width: 100%;
 	}
 	.col-1-2 {
-		width: 25%;
+		width: 50%;
+	}
+	#bg-hero {
+		font-size: 1rem;
+	}
+	table, thead, tbody, th, tr, td {
+		display: block;
+	}
+	thead tr {
+		
+	}
+	tr {
+		border: 1px solid #CCCCCC;
+	}
+	td {
+		border: none;
+		position: relative;
+		border-bottom: 1px solid #EEEEEE; 
+		padding-left: 50%;
+	}
+	td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
 	}
 }
 /* ========================================================== \
@@ -147,13 +161,16 @@ td {
 	padding: 5px;
 	font-size: 1rem;
 }
-#order a {
+table {
+	width: 100%
+}
+#btn a {
 	background: #8D2E41;
 	padding: 10px;
 	color: #f1e8dc;
 	font-size: 1rem;
 }
-#order a:hover {
+#btn a:hover {
 	background: #da4765;
 	color: #000;
 }
@@ -190,9 +207,20 @@ button:hover {
 	width: 100%;
 	overflow: auto;
 	position: relative;
+	bottom: 0;
 }
 .nav-soc {
 	position: absolute;
-	bottom: 0;
+	bottom: 40px;
 	left: 440px;
+}
+
+
+
+.nav-soc li {
+	max-width:20%;
+}
+
+.img-responsive {
+	width:100%;
 }

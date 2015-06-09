@@ -119,7 +119,7 @@ a:link {
 		width: 40%;
 	}
 	.top-li {
-		top: 4%;
+		top: 1%;
 		left: 28%;
 	}
 	#bg-hero {
@@ -224,6 +224,7 @@ button:hover {
 }
 .bot-nav li {
 	max-width:20%;
+	display: inline-block;
 }
 .img-responsive {
 	width:100%;

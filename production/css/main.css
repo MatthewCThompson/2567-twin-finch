@@ -16,21 +16,14 @@
 	background: #F1E8DC;
 	width: 100%;
 	overflow: auto;
-	display: block;
 }
-.top-li {
-	position: absolute;
-	top: 12%;
-	left: 30%;
+.top-li ul, li {
+	position: relative;
+	right: 20%;
 	font-size: 2rem;
-}
-ul, li {
 	display: inline-block;
 	text-align: center;
 	color: #2C5B4A;
-}
-.top-li:hover {
-	color: #000;
 }
 #bg-hero {
 	background: url(../img/woodfloor.jpg) no-repeat center;
@@ -118,9 +111,12 @@ a:link {
 	.col-1-2 {
 		width: 40%;
 	}
-	.top-li {
-		top: 1%;
-		left: 28%;
+	.top-li ul, li {
+	list-style: none;
+	text-align: center;
+	color: #2C5B4A;
+	display: inherit;
+	right: 16%;
 	}
 	#bg-hero {
 		font-size: 1.5rem;
@@ -219,8 +215,8 @@ button:hover {
 }
 .bot-nav {
 	position: absolute;
-	bottom: 25%;
-	left: 33%;
+	bottom: 10%;
+	left: 41%;
 }
 .bot-nav li {
 	max-width:20%;
